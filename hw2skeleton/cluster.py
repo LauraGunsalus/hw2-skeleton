@@ -310,7 +310,7 @@ def clusterMembership(assignmentA, assignmentB):
 # Goal: compute cluster membership for both clusterings for all possible k
 # Input: matrix of site similarity, site coordinates, random seed
 # Output: average cluster membership for each possible cluster size for each algorithm
-def compareclusterMembership(distanceMatrix,activeSiteCoords,seed):
+def compareClusterMembership(distanceMatrix,activeSiteCoords,seed):
     kmeans_single = []
     kmeans_complete = []
     single_complete = []
@@ -325,7 +325,19 @@ def compareclusterMembership(distanceMatrix,activeSiteCoords,seed):
     return kmeans_single, kmeans_complete, single_complete
 
 
+##############################################################################
+####  RANDOM OTHER HELPERS
+##############################################################################
 
+# Goal: cluster dictionary to cluster assignment list
+# Input: Cluster assignment dictionary
+# Output: Cluster assignment list
+def clusterDictToList(clusterDict,distanceMatrix):
+    clusterList = np.zeros(len(distanceMatrix))
+    for cluster, itemList in clusterDict.items():
+        for item in itemList:
+            clusterList[item] = cluster
+    return clusterList
 
 
 
