@@ -6,27 +6,21 @@ from .utils import Atom, Residue, ActiveSite
 def read_active_sites(dir):
     """
     Read in all of the active sites from the given directory.
-
     Input: directory
     Output: list of ActiveSite instances
     """
     files = glob.glob(dir + '/*.pdb')
-
     active_sites = []
     # iterate over each .pdb file in the given directory
     for filepath in glob.iglob(os.path.join(dir, "*.pdb")):
-
         active_sites.append(read_active_site(filepath))
-
     print("Read in %d active sites"%len(active_sites))
-
     return active_sites
 
 
 def read_active_site(filepath):
     """
     Read in a single active site given a PDB file
-
     Input: PDB file path
     Output: ActiveSite instance
     """
@@ -73,7 +67,6 @@ def read_active_site(filepath):
 def write_clustering(filename, clusters):
     """
     Write the clustered ActiveSite instances out to a file.
-
     Input: a filename and a clustering of ActiveSite instances
     Output: none
     """
@@ -91,7 +84,6 @@ def write_clustering(filename, clusters):
 def write_mult_clusterings(filename, clusterings):
     """
     Write a series of clusterings of ActiveSite instances out to a file.
-
     Input: a filename and a list of clusterings of ActiveSite instances
     Output: none
     """
