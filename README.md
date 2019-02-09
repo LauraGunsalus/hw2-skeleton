@@ -1,4 +1,4 @@
-# HW2 Skeleton
+# HW2 Submission
 
 [![Build
 Status](https://travis-ci.org/LauraGunsalus/hw2-skeleton.svg?branch=master)](https://travis-ci.org/LauraGunsalus/hw2-skeleton)
