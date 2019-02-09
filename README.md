@@ -1,7 +1,7 @@
 # HW2 Skeleton
 
 [![Build
-Status](https://travis-ci.org/ucsf-bmi-203/hw2-skeleton.svg?branch=master)](https://travis-ci.org/ucsf-bmi-203/hw2-skeleton)
+Status](https://travis-ci.org/LauraGunsalus/hw2-skeleton.svg?branch=master)](https://travis-ci.org/LauraGunsalus/hw2-skeleton)
 
 Skeleton for clustering project.
 
@@ -21,7 +21,7 @@ The main file that you will need to modify is `cluster.py` and the corresponding
 .
 ├── README.md
 ├── data
-│   ...
+├── cluster_analysis.py
 ├── hw2skeleton
 │   ├── __init__.py
 │   ├── __main__.py
@@ -41,13 +41,9 @@ To use the package, first run
 conda install --yes --file requirements.txt
 ```
 
-to install all the dependencies in `requirements.txt`. Then the package's
-main function (located in `hw2skeleton/__main__.py`) can be run as
-follows
+to install all the dependencies in `requirements.txt`. 
 
-```
-python -m hw2skeleton -P data test.txt
-```
+Code to generate quality metric graphs can be found in `cluster_analysis.py`. 
 
 ## testing
 
