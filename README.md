@@ -3,7 +3,7 @@
 [![Build
 Status](https://travis-ci.org/LauraGunsalus/hw2-skeleton.svg?branch=master)](https://travis-ci.org/LauraGunsalus/hw2-skeleton)
 
-Skeleton for clustering project.
+Clustering project.
 
 ## assignment
 
