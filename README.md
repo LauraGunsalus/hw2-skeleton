@@ -46,7 +46,7 @@ main function (located in `hw2skeleton/__main__.py`) can be run as
 follows
 
 ```
-python -m hw2skeleton -P data test.txt
+python -m hw2skeleton -P data/ test.txt
 ```
 
 
